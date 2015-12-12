@@ -26,7 +26,7 @@ Source:       http://pecl.php.net/get/%{pecl_name}-%{version}.tgz
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires: %{php_base}-devel, %{php_base}-pear, openssl-devel
+BuildRequires: %{php_base}-devel, %{php_base}-pear, openssl-devel, cyrus-sasl-devel
 
 Requires(post): %{__pecl}
 Requires(postun): %{__pecl}
