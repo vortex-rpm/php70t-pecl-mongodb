@@ -16,7 +16,7 @@
 
 Summary:      PHP MongoDB database driver
 Name:         %{php_base}-pecl-mongodb
-Version:      1.0.1
+Version:      1.1.0
 Release:      1.vortex%{?dist}
 License:      ASL 2.0
 Group:        Development/Languages
@@ -145,5 +145,8 @@ cd %{pecl_name}-%{version}
 
 
 %changelog
+* Fri Dec 18 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 1.1.0-1.vortex
+- Update to 1.1.0.
+
 * Sat Dec 12 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 1.0.1-1.vortex
 - Initial packaging.
