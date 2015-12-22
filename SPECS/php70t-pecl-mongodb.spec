@@ -126,17 +126,6 @@ if [ "$1" -eq "0" ]; then
 fi
 %endif
 
-
-%check
-cd %{pecl_name}-%{version}
-# only check if build extension can be loaded
-
-%{_bindir}/php \
-    -n -d extension_dir=modules \
-    -d extension=%{pecl_name}.so \
-    -i | grep "MongoDB Support => enabled"
-
-
 %files
 %defattr(-, root, root, -)
 %doc %{pecl_name}-%{version}/README.md
