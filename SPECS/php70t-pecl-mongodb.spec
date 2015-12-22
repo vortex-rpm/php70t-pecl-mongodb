@@ -6,6 +6,7 @@
 %global real_name php-pecl-mongodb
 %global basever 1
 %global php_base php70t
+%global date 20151222
 
 # RPM 4.8
 %{?filter_provides_in: %filter_provides_in %{php_extdir}/.*\.so$}
@@ -17,7 +18,7 @@
 Summary:      PHP MongoDB database driver
 Name:         %{php_base}-pecl-mongodb
 Version:      1.1.0
-Release:      1.vortex%{?dist}
+Release:      2.%{?date}.vortex%{?dist}
 License:      ASL 2.0
 Group:        Development/Languages
 URL:          http://pecl.php.net/package/%{pecl_name}
@@ -145,6 +146,9 @@ cd %{pecl_name}-%{version}
 
 
 %changelog
+* Tue Dec 22 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 1.1.0-2.20151222.vortex
+- Git sources.
+
 * Fri Dec 18 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 1.1.0-1.vortex
 - Update to 1.1.0.
 
